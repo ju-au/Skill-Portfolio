@@ -1,0 +1,26 @@
+.blank {
+    width: 100%;
+    height: calc(100vh - #{$header-height} - #{$footer-height});
+    position: relative;
+}
+.blank-scroll {
+    position: absolute;
+    width: 150px;
+    top: 0;
+    left: calc(50% - 150px / 2);
+    animation: blank-scroll 2s ease-in-out infinite;
+    display: none;
+}
+
+@keyframes blank-scroll {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(50vh);
+        opacity: 1;
+    }
+}

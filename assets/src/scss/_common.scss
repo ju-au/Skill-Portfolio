@@ -1,0 +1,172 @@
+@import "./responsive";
+@import "./hamburger-menu";
+
+$header-height: 70px;
+$footer-height: 70px;
+$theme-color: #d2171a;
+
+html {
+    font-size: 62.5%;
+    font-family: "comic sans ms", "Futura", "Gill Sans";
+}
+body {
+    font-size: 1.6rem;
+    letter-spacing: 0.05em;
+    color: #171717;
+    background-color: #d1c7c7;
+    @include sp {
+        font-size: 2rem;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header,
+section,
+footer {
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+section {
+    margin-bottom: calc(100vh * 0.3);
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.top {
+    padding-top: $header-height;
+    background-color: rgba(0, 0, 0, 0);
+    height: calc(50vh + 100vh * 0.3);
+    margin: 0;
+    position: relative;
+}
+.top__img {
+    width: 100%;
+    height: calc(100vh - #{$header-height} - #{$footer-height});
+    filter: brightness(.9);
+    object-fit: cover;
+    object-position: center;
+    position: fixed;
+    z-index: -2;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 70px 0px;
+    @include tab {
+        width: 90%;
+        padding: 70px 0px;
+    }
+}
+
+:target {
+    scroll-margin-top: $header-height;
+}
+
+.page__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 10rem;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    padding: 0 10px;
+    z-index: 1;
+    @include sp {
+        font-size: 6rem;
+    }
+}
+.section__title {
+    margin: 0 auto;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-align: center;
+    @include sp {
+        font-size: 4rem;
+    }
+}
+h3 {
+    font-size: 2rem;
+    @include sp {
+        font-size: 3rem;
+    }
+}
+p {
+    overflow-wrap: break-word;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+
+.button,
+#wpforms-submit-65 {
+    display: block;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: $theme-color;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: calc(40px - 5px);
+    margin: 70px auto 0 auto;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 5px solid #9f000c;
+    transition: 0.3s;
+    &:after {
+        content: '>';
+        position: absolute;
+        right: 1rem;
+    }
+    &:hover {
+        transform: translateY(3px);
+        border-bottom: 2px solid #9f000c;
+    }
+}
+
+.fa-instagram-square {
+    color: #d93177;
+}
+.fa-facebook-square {
+    color: #1877f2;
+}
+
+.pc-br {
+    @include tab {
+        display: none;
+    }
+}
+.tab-br {
+    display: none;
+    @include tab {
+        display: inline-block;
+    }
+}
+.sp-br {
+    display: none;
+    @include sp {
+        display: inline-block;
+    }
+}
+
+.is-shown {
+    display: block !important;
+}

@@ -1,0 +1,15 @@
+.grab__item {
+    width: 30%;
+    @include sp {
+        width: 100%;
+        // .topping__itemが偶数個の場合、以下をコメントアウト
+        //     &:last-of-type {
+        //         display: none;
+        //     }
+    }
+}
+
+.allergic-notice {
+    text-align: center;
+    color: $theme-color;
+}

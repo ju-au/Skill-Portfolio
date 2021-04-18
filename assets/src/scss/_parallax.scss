@@ -1,0 +1,15 @@
+.bg-parallax {
+    position: fixed;
+    top: $header-height;
+    z-index: -10;
+    height: calc(100vh - #{$header-height} - #{$footer-height});
+    display: none;
+    @include tab {
+        width: 100%;
+        height: auto;
+        bottom: $footer-height;
+    }
+}
+_::-webkit-full-page-media, _:future, :root .rellax {
+    display: none !important;
+}

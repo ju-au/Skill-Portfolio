@@ -1,0 +1,84 @@
+.information__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include tab {
+        flex-direction: column-reverse;
+    }
+}
+.information__swiper {
+    width: 400px;
+    height: 400px;
+    @include tab {
+        margin-bottom: 40px;
+        width: 60%;
+        height: auto;
+    }
+    @include sp {
+        width: 100%;
+    }
+}
+.information__img {
+    width: 100%;
+    height: 100%;
+}
+
+.information__contents {
+    width: 400px;
+    @include sp {
+        width: 100%;
+    }
+}
+.information-item {
+    margin-bottom: 50px;
+    text-align: center;
+    @include sp {
+        margin-bottom: 100px;
+    }
+}
+.information__title {
+    margin-bottom: 20px;
+}
+
+
+.information__illust-position {
+    position: relative;
+}
+.information__illust {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    bottom: -70%;
+}
+
+
+.information__body {
+    margin-bottom: 20px;
+}
+
+
+.information__hours {
+    margin: 0 auto;
+}
+.hours__row {
+    text-align: left;
+    vertical-align: top;
+}
+.hours__day {
+    padding-right: 25px;
+}
+
+
+.information__sns-icon {
+    font-size: 5rem;
+}
+.information__uber-icon {
+    display: inline-block;
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translateY(4px);
+}
+.information__button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

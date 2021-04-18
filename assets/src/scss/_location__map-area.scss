@@ -1,0 +1,8 @@
+.map-area {
+    overflow: hidden;
+}
+.map-area__gmap {
+    height: 50vh;
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+}

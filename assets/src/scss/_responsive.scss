@@ -1,0 +1,17 @@
+// レスポンシブ対応
+$tab-width: 959px;
+$sp-width: 559px;
+
+// タブレット表示
+@mixin tab {
+    @media screen and (max-width: $tab-width) {
+        @content;
+    }
+}
+
+// スマートフォン表示
+@mixin sp {
+    @media screen and (max-width: $sp-width) {
+        @content;
+    }
+}

@@ -1,0 +1,13 @@
+.top-news__headlines {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-left: 50px;
+    @include sp {
+        padding-left: 0;
+    }
+}
+.top-news__title {
+    display: block;
+    text-decoration: underline;
+    margin: 0 0 20px 20px;
+}

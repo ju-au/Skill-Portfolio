@@ -1,0 +1,34 @@
+// 全ページ共通SCSS
+@import "./scss/common";
+@import "./scss/header";
+@import "./scss/welcome";
+@import "./scss/blank";
+@import "./scss/footer";
+@import "./scss/link-tab";
+
+// Topページ
+@import "./scss/index__first-view";
+@import "./scss/index__location";
+@import "./scss/index__news";
+@import "./scss/index__menu";
+@import "./scss/index__contact";
+@import "./scss/parallax";
+
+// Menuページ
+@import "./scss/menu__ramen";
+@import "./scss/menu__grab";
+
+// Newsページ
+@import "./scss/news__topics";
+
+// Locationページ
+@import "./scss/location__map-area";
+@import "./scss/location__information";
+
+// Contactページ
+@import "./scss/contact__form";
+
+// 投稿ページ
+@import "./scss/single__topic";
+
+

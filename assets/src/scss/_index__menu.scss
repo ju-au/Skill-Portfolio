@@ -1,0 +1,39 @@
+.top-menu__contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    @include tab {
+        position: relative;
+    }
+    @include sp {
+        position: static;
+        flex-direction: column-reverse;
+    }
+}
+.top-menu__body {
+    width: calc(100% / 2 - 20px);
+    overflow-wrap: break-word;
+    @include tab {
+        width: 70%;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        padding: 15px;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    @include sp {
+        position: static;
+        transform: translateX(0);
+        width: 100%;
+    }
+}
+.top-menu__img {
+    width: calc(100% / 2 - 20px);
+    @include tab {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

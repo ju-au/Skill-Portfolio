@@ -1,0 +1,112 @@
+.menu__contents {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    @include sp {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+.menu__item {
+    margin-bottom: 100px;
+    text-align: center;
+}
+.menu__img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.menu__illust-position {
+    position: relative;
+}
+.menu__illust {
+    position: absolute;
+}
+%menu__name-price {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    @include sp {
+        font-size: 3rem;
+    }
+}
+.menu__name {
+    @extend %menu__name-price;
+    color: $theme-color;
+}
+.menu__price {
+    @extend %menu__name-price;
+}
+
+
+.ramen__contents {
+    margin-bottom: 50px;
+}
+.ramen__item {
+    width: 45%;
+    @include sp {
+        width: 100%;
+        // .ramen__itemが偶数個の場合、以下をコメントアウト
+        &:last-of-type {
+            display: none;
+        }
+    }
+}
+.shoyu {
+    width: 20%;
+    bottom: -16%;
+    left: 0%;
+    @include tab {
+        bottom: -27%;
+        left: 3%;
+    }
+}
+.tonkotsu {
+    width: 18%;
+    bottom: -18%;
+    right: 0;
+    @include tab {
+        bottom: -27%;
+    }
+}
+.tantan {
+    width: 30%;
+    bottom: -16%;
+    left: -10%;
+    @include tab {
+        bottom: -23%;
+        left: -7%;
+    }
+}
+.ramen__name {
+    padding: 0 15%;
+}
+
+
+.topping__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.topping__contents {
+    @include sp {
+        flex-direction: row;
+    }
+}
+.topping__item {
+    width: 30%;
+    @include sp {
+        width: 45%;
+        margin: 50px auto 0 auto;
+        // .topping__itemが偶数個の場合、以下をコメントアウト
+        // &:last-of-type {
+        //     display: none;
+        // }
+    }
+}
+.topping__name,
+.topping__price {
+    font-size: 1.6rem;
+    @include sp {
+        font-size: 2rem;
+    }
+}

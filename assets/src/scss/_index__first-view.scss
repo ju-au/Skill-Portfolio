@@ -1,0 +1,29 @@
+.first-view {
+    position: relative;
+    margin-bottom: 0;
+    padding-top: $header-height;
+}
+.first-view__carousel {
+    display: block;
+    height: calc(100vh - #{$header-height});
+    width: 100%;
+    object-fit: cover;
+    @include sp {
+        height: 450px;
+    }
+}
+.first-view__scroll {
+    display: none;
+    width: 150px;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 150px / 2);
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: scroll-down 2s ease-in-out forwards;
+    z-index: 2;
+    @include sp {
+        display: none !important;
+    }
+}
+

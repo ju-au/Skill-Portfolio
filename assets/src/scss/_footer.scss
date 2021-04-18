@@ -1,0 +1,40 @@
+footer {
+    height: $footer-height;
+    text-align: center;
+    border: 1px solid black;
+}
+.footer__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    @include tab {
+        justify-content: flex-end;
+        padding-right: 250px;
+    }
+    @include sp {
+        justify-content: center;
+        padding-right: 0;
+    }
+}
+.footer__credit {
+    color: $theme-color;
+    font-size: 2.5rem;
+    @include tab {
+        font-size: 2rem;
+    }
+    @include sp {
+        margin-top: 5px;
+        font-size: 1.6rem;
+    }
+}
+.footer__copyright {
+    font-size: 1.4rem;
+    @include sp {
+        font-size: 1.2rem;
+    }
+}
+.footer__illust {
+    width: 90px;
+    margin-left: 10px;
+}
