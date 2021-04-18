@@ -5,7 +5,6 @@ import welcome from './js/welcome.js';
 welcome();
 
 import objectFitImages from 'object-fit-images';
-const OFITarget = ['.top__img', '.first-view__carousel']
 objectFitImages();
 
 import Swiper from 'swiper';
