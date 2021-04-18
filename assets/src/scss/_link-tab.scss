@@ -7,7 +7,7 @@
     background-color: $theme-color;
     color: #fff;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     z-index: 9;
     @include sp {
         display: none;
@@ -29,6 +29,7 @@
 .link-tab__icon--order {
     @extend %link-tab__icon;
     width: 2.8rem;
+    height: 2.8rem;
     margin-left: 33px;
     border: 1px #fff solid;
 }

@@ -7,7 +7,7 @@
 <section class="thanks">
     <div class="container">
         <h2 class="section__title">Your message has been sent</h2>
-        <a href="<?php echo home_url(); ?>" class="button">Home<span class="button-arrow">&gt;</span></a>
+        <a href="<?php echo home_url(); ?>" class="button">Home</a>
     </div>
 </section>
 

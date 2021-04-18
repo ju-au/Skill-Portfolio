@@ -8,6 +8,7 @@
     height: calc(100vh - #{$header-height});
     width: 100%;
     object-fit: cover;
+    font-family: 'object-fit:cover;';
     @include sp {
         height: 450px;
     }
@@ -20,10 +21,22 @@
     left: calc(50% - 150px / 2);
     transform: translateX(-50%);
     opacity: 0;
-    animation: scroll-down 2s ease-in-out forwards;
+    animation: first-view__scroll 2s ease-in-out forwards;
     z-index: 2;
     @include sp {
         display: none !important;
     }
 }
-
+@keyframes first-view__scroll {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
