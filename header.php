@@ -58,7 +58,7 @@
         <div class="welcome__skill">
             <h3 class="skill__title">使用技術</h3>
             <ul class="skill__list">
-                <li class="skill__list-item">adobe XDを使用したデザイン</li>
+                <li class="skill__list-item">Adobe XDを使用したデザイン</li>
                 <li class="skill__list-item">HTML、SCSS、Javascript、PHPを使用したコーディング</li>
                 <li class="skill__list-item">レスポンシブ対応</li>
                 <li class="skill__list-item">SCSS、Javascriptのモジュール化</li>
@@ -69,6 +69,7 @@
                 <li class="skill__list-item">babel、polyfillによるIE11対応</li>
                 <li class="skill__list-item">session storageによるセッション管理（このウィンドウを初回のみ表示させます）</li>
                 <li class="skill__list-item"><a href="https://github.com/ju-au/Skill-Portfolio.git" target="_blank">コードはこちら（github）</a></li>
+                <li class="skill__list-item"><a href="https://ramen-nobu-cairns.com" target="_blank">元のサイトはこちら</a></li>
             </ul>
         </div> <!-- .welcome__skill -->
         <p>このウィンドウは、メニューから再度表示いただけます。</p>
