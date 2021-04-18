@@ -68,7 +68,7 @@
                 <li class="skill__list-item">Webpackを用いたSCSS、Javascriptファイルのバンドル、高速化</li>
                 <li class="skill__list-item">babel、polyfillによるIE11対応</li>
                 <li class="skill__list-item">session storageによるセッション管理（このウィンドウを初回のみ表示させます）</li>
-                <li class="skill__list-item"><a href="#">コードはこちら（github）</a></li>
+                <li class="skill__list-item"><a href="https://github.com/ju-au/Skill-Portfolio.git" target="_blank">コードはこちら（github）</a></li>
             </ul>
         </div> <!-- .welcome__skill -->
         <p>このウィンドウは、メニューから再度表示いただけます。</p>
